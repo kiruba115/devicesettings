@@ -427,7 +427,6 @@ Host::~Host()
                     AudioOutputPort fallback_aPort = getAudioOutputPort("SPEAKER0");
                     cout << "Using audio port: SPEAKER0" << "\n";
                     return fallback_aPort.getOutputPortHandle();
-                    
                 }
                 catch(const std::exception& e)
                 {
